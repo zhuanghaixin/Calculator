@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 50px;
+  /*font-weight: bold;*/
+  font-family: Helvetica;
+}
+.clearfix::after {
+  content:'';
+  display: block;
+  clear: both;
+}
+/*显示区*/
+div.show{
+  height: 25vh;
+
+  color:#fff;
+  background-color: #000;
+  position: relative;
+}
+div.show span{
+  display: block;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  font-size:90px;
+}
+
+/*键位区*/
+button{
+  height: 15vh;
+  background-color: #ccc;
+  float: left;
+  width: 25%;
+}
+.unusual-operators{
+  background-color: gray;
+}
+.common-operator{
+  background-color: orange;
+}
+.two-double-width{
+  width: 50%;
+}
+.unusual-operators:nth-child(1),.unusual-operators:nth-child(2){
+font-size:30px;
+}
